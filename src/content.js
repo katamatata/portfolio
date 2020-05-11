@@ -1,21 +1,22 @@
 export const content = {
   about: {
-    name: 'KATERYNA',
-    surname: 'VORONINA',
-    address: 'MY STR. 1, 11111 BERLIN',
+    title: "About",
+    name: 'Kateryna',
+    surname: 'Voronina',
+    address: 'My Str. 1, 11111 Berlin',
     phoneNumber: '+4900000000000',
-    email: 'NAME@GMAIL.COM',
+    email: 'name@gmail.com',
     description: 'I am a Junior Frontend Developer currently based on Earth. Passionate about developing user-friendly software applications.',
     socials: {
       items: ['url','url','url']
     }
   },
   education: {
-    title: 'EDUCATION',
+    title: 'Education',
     items: [
       {
-        title: 'REDI SCHOOL OF DIGITAL INTEGRATION',
-        degree: 'FRONTEND WEB DEVELOPMENT',
+        title: 'ReDi School Of Digital Integration',
+        degree: 'Frontend Web Development',
         dates: {
           from: '2019',
           to: '2020'
@@ -23,8 +24,8 @@ export const content = {
         description: '4-month Javascript course. 4-month ReactJS course.'
       },
       {
-        title: 'ODESSA NATIONAL I.I. MECNIKOV UNIVERSITY',
-        degree: 'BACHELOR OF APPLIED MATHEMATICS',
+        title: 'Odessa National I.I. Mecnikov University',
+        degree: 'Bachelor of Applied Mathematics',
         dates: {
           from: '2002',
           to: '2007'
@@ -33,20 +34,20 @@ export const content = {
     ]
   },
   projects: {
-    title: 'PROJECTS',
+    title: 'Projects',
     githubActivity: {
-      title: 'WHAT I HAVE BEEN WORKING ON LATELY',
+      title: 'What I have been working on lately',
       items: [{}, {}, {}]
     }
   },
   skills: {
-    title: 'SKILLS',
+    title: 'Skills',
     programmingLanguages: {
-      title: 'PROGRAMMING LANGUAGES & TOOLS',
+      title: 'Programming languages & tools',
       items: ['url', 'url', 'url']
     },
     languages: {
-      title: 'LANGUAGES',
+      title: 'Languages',
       items: [
         {
           name: 'English',
@@ -68,7 +69,7 @@ export const content = {
     }
   },
   interests: {
-    title: 'INTERESTS',
+    title: 'Interests',
     description: 'I have some interests.'
   }
 };
