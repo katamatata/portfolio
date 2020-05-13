@@ -1,12 +1,12 @@
 import React from "react";
 
-import { Name, Surname } from "./AboutElements";
+import { H1 } from "../../common";
 
-export const About = () => {
+import { Surname } from "./AboutElements";
+
+export const About = ({ content }) => {
   return (
     <div>
-      <Name>Kateryna</Name>
-      <Surname>Voronina</Surname>
-      
+      <H1>{content.name} <Surname>Voronina</Surname></H1>
     </div>
 )};

@@ -3,13 +3,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { content } from "../../content";
 import About from "../About";
+import Projects from "../Projects/Projects";
 
 import { Wrapper, NavBarWrapper, ImageWrapper, Avatar, Menu, MenuItem, Link } from "./AppElements";
 
 export const App = () => {
 
-  return (
+  const renderAbout = () => (
+    <About content={content.about} />
+  )
 
+  return (
     <Router>
       <Wrapper>
         <NavBarWrapper>
@@ -18,7 +22,7 @@ export const App = () => {
           </ImageWrapper>
           <Menu>
             <MenuItem>
-              <Link to="/">{content.about.title}</Link>
+              <Link to="/about">{content.about.title}</Link>
             </MenuItem>
             <MenuItem>
               <Link to="/projects">{content.projects.title}</Link>
@@ -36,11 +40,14 @@ export const App = () => {
         </NavBarWrapper>
 
         <Switch>
+          <Route exact path="/">
+            {renderAbout()}
+          </Route>
           <Route path="/about">
-            <About content={content.about} papa="njdahfaz" mama="sdbfsdfv" count={5} />
+            {renderAbout()}
           </Route>
           <Route path="/projects">
-            {/* <Projects /> */}
+            <Projects text="dgsdfgsdgs"/>
           </Route>
           <Route path="/education">
             {/* <Education /> */}
@@ -51,9 +58,7 @@ export const App = () => {
           <Route path="/interests">
             {/* <Interests /> */}
           </Route>
-          <Route path="/">
-            <About />
-          </Route>
+          
         </Switch>
       </Wrapper>
     </Router> 

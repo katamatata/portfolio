@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link as RouterLink } from "react-router-dom";
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: #868e96;
-  line-height: 1.5;
+  line-height: 1.5; 
   min-height: 100vh;
   padding-left: 272px;
 `;
