@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { content } from "../../content";
+import About from "../About";
 
-import { Wrapper, NavBarWrapper, ImageWrapper, Avatar, Menu, MenuItem } from "./AppElements";
+import { Wrapper, NavBarWrapper, ImageWrapper, Avatar, Menu, MenuItem, Link } from "./AppElements";
 
 export const App = () => {
 
@@ -33,26 +34,22 @@ export const App = () => {
             </MenuItem>
           </Menu>
         </NavBarWrapper>
-      
-        <main>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe magni blanditiis officia nulla dolores nesciunt et praesentium officiis perferendis nisi suscipit fugiat quo id aut ab eum quam, vel adipisci?
-        </main>
 
         <Switch>
           <Route path="/about">
-            <About />
+            <About content={content.about} papa="njdahfaz" mama="sdbfsdfv" count={5} />
           </Route>
           <Route path="/projects">
-            <Projects />
+            {/* <Projects /> */}
           </Route>
           <Route path="/education">
-            <Education />
+            {/* <Education /> */}
           </Route>
           <Route path="/skills">
-            <Skills />
+            {/* <Skills /> */}
           </Route>
           <Route path="/interests">
-            <Interests />
+            {/* <Interests /> */}
           </Route>
           <Route path="/">
             <About />
