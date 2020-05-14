@@ -8,7 +8,20 @@ export const content = {
     email: 'name@gmail.com',
     description: 'I am a Junior Frontend Developer currently based on Earth. Passionate about developing user-friendly software applications.',
     socials: {
-      items: ['url','url','url']
+      items: [
+        {
+          image: "icon url",
+          url: "url"    
+        },
+        {
+          image: "icon url",
+          url: "url"    
+        },
+        {
+          image: "icon url",
+          url: "url"    
+        },
+      ]
     }
   },
   education: {

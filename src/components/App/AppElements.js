@@ -4,9 +4,10 @@ import { Link as RouterLink } from "react-router-dom";
 export const Wrapper = styled.div`
   font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   color: #868e96;
-  line-height: 1.5; 
-  min-height: 100vh;
-  padding-left: 272px;
+  min-height: calc(100vh - 96px);
+  display: flex;
+  align-items: center;
+  padding: 48px 48px 48px 320px;
 `;
 
 export const NavBarWrapper = styled.nav`
@@ -40,7 +41,7 @@ export const MenuItem = styled.li`
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.8px;
-  padding: 8px;
+  padding: 9px;
   cursor: pointer; 
 `;
 

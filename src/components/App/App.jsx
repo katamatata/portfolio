@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+ 
 
 import { content } from "../../content";
 import About from "../About";
@@ -12,6 +15,8 @@ export const App = () => {
   const renderAbout = () => (
     <About content={content.about} />
   )
+
+  library.add(fab);
 
   return (
     <Router>
@@ -47,7 +52,7 @@ export const App = () => {
             {renderAbout()}
           </Route>
           <Route path="/projects">
-            <Projects text="dgsdfgsdgs"/>
+            {/* <Projects text="dgsdfgsdgs"/> */}
           </Route>
           <Route path="/education">
             {/* <Education /> */}
